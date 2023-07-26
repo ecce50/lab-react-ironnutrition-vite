@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const AddFoodForm = () => {
+const AddFoodForm = (addFood) => {
   const [nameInput, setNameInput] = useState("");
   const [imageInput, setImageInput] = useState("");
   const [caloriesInput, setCaloriesInput] = useState("");
@@ -8,7 +8,9 @@ const AddFoodForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(nameInput);
+      console.log(nameInput);
+      const newFoodItem = { name, image, calories, servings };
+      AddFood(newFoodItem);
     setNameInput("");
     setImageInput("");
     setCaloriesInput("");

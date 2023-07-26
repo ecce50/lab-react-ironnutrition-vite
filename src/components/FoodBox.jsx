@@ -9,14 +9,6 @@ function FoodBox({ oneFood, foods, setFoods }) {
         })
     }
 
-
-        
-  
-  
-    
-        
-
-
   return (
     <div>
       <h3>{oneFood.name}</h3>
