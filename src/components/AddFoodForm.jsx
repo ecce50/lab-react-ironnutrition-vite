@@ -1,13 +1,14 @@
 import { useState } from "react";
 
 const AddFoodForm = (addFood) => {
+    //creating hooks containing states representing name, image, calories and servings and methods to update them. Initial state is empty
   const [nameInput, setNameInput] = useState("");
   const [imageInput, setImageInput] = useState("");
   const [caloriesInput, setCaloriesInput] = useState("");
   const [servingsInput, setServingsInput] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (event) => { //creating a function to handle the input of data in the form that will be created below
+    event.preventDefault(); // 
       console.log(nameInput);
       const newFoodItem = { name, image, calories, servings };
       AddFood(newFoodItem);
