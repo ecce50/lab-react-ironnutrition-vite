@@ -1,0 +1,20 @@
+
+
+.foodForm {
+
+    margin-bottom: 2rem;
+
+
+& form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+     align-items: center;
+
+}
+
+& button {
+    margin-bottom: 1rem;
+    width: 6rem;
+}
+}
